@@ -12,9 +12,9 @@
 
 ### Association
 
-- has_many :fishings
+- has_many :Informations
 
-## fishings
+## Informations(釣果情報)
 
 | Column              | Type       | Options                        |
 |---------------------|----------- |------------------------------- |
