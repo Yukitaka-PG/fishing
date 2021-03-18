@@ -12,7 +12,7 @@
 
 ### Association
 
-- has_many :Informations
+- has_many :informations
 
 ## Informations(釣果情報)
 
@@ -24,7 +24,7 @@
 | size                | integer    |                                |
 | weight              | integer    |                                |
 | number              | integer    |                                |
-| Prefecture_id       | integer    | null: false                    |
+| prefecture_id       | integer    | null: false                    |
 | area                | string     |                                |
 | user                | references | null: false, foreign_key: true |
 
