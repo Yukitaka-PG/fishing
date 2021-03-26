@@ -18,6 +18,7 @@
 
 | Column              | Type       | Options                        |
 |---------------------|----------- |------------------------------- |
+| title               | string     | null: false                    |
 | text                | text       |                                |
 | date_id             | integer    | null: false                    |
 | fish                | string     | null: false                    |

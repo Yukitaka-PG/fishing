@@ -6,6 +6,7 @@ class InformationsController < ApplicationController
   end
 
   def new
+    @information = Information.new
   end
 
   private
