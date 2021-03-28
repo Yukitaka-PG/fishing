@@ -1,13 +1,10 @@
 <div class="items-sell-contents">
   <div class="items-sell-main">
     <h2 class="items-sell-title">釣果を入力</h2>
-    <%= form_with model: @informations, local: true do |f| %>
+    <%= form_with model: @information, url: informations_path, method: :post, local: true do |f| %>
 
-    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
-    <%# render 'shared/error_messages', model: f.object %>
-    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+    <%= render 'shared/error_messages', model: f.object %>
 
-    <%# 出品画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
         画像
@@ -20,8 +17,7 @@
         <%= f.file_field :image, id:"item-image" %>
       </div>
     </div>
-    <%# /出品画像 %>
-    <%# 商品名と商品説明 %>
+    
     <div class="new-items">
       <div class="weight-bold-text">
         釣果情報
@@ -31,14 +27,12 @@
       <div class="items-explain">
         <div class="weight-bold-text">
           釣果情報の説明
-          <span class="any">任意</span>
+          <span class="any-add">任意</span>
         </div>
         <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"釣果情報の説明（任意 1,000文字まで）  例(休日に堤防で釣りをしていたところタイが釣れました。)" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
-    <%# /商品名と商品説明 %>
-
-    <%# 商品の詳細 %>
+    
     <div class="items-detail">
       <div class="fish-information">釣果データ</div>
       <div class="form">
@@ -56,17 +50,17 @@
         <%= f.text_field :fish, class:"items-fish", id:"item-name", placeholder:"（必須 20文字まで)", maxlength:"20" %>
         <div class="weight-bold-text">
           サイズ
-          <span class="any">任意</span>
+          <span class="any-add">任意</span>
         </div>
         <%= f.number_field :size, class:"items-size", id:"item-name" %><span class="size-cm"> cm</span>
         <div class="weight-bold-text">
           重さ
-          <span class="any">任意</span>
+          <span class="any-add">任意</span>
         </div>
         <%= f.number_field :weight, class:"items-weight", id:"item-name" %><span class="weight-Kg"> Kg</span>
         <div class="weight-bold-text">
           匹数
-          <span class="any">任意</span>
+          <span class="any-add">任意</span>
         </div>
         <%= f.number_field :number, class:"items-number", id:"item-name", maxlength:"3" %><span class="number-fish"> 匹</span>
         <div class="weight-bold-text">
@@ -76,18 +70,16 @@
         <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
         <div class="weight-bold-text">
           エリア
-          <span class="any">任意</span>
+          <span class="any-add">任意</span>
         </div>
         <%= f.text_field :area, class:"items-area", id:"item-name", placeholder:"（必須 20文字まで)", maxlength:"20" %>
       </div>
     </div>
-    <%# /商品の詳細 %>
-    <%# 下部ボタン %>
+
     <div class="sell-btn-contents">
       <%= f.submit "投稿する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
-    <%# /下部ボタン %>
   </div>
   <% end %>
 </div>
