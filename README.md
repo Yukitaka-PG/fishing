@@ -12,19 +12,20 @@
 
 ### Association
 
-- has_many :fishings
+- has_many :informations
 
-## fishings
+## Informations(釣果情報)
 
 | Column              | Type       | Options                        |
 |---------------------|----------- |------------------------------- |
+| title               | string     | null: false                    |
 | text                | text       |                                |
 | date_id             | integer    | null: false                    |
 | fish                | string     | null: false                    |
 | size                | integer    |                                |
 | weight              | integer    |                                |
 | number              | integer    |                                |
-| Prefecture_id       | integer    | null: false                    |
+| prefecture_id       | integer    | null: false                    |
 | area                | string     |                                |
 | user                | references | null: false, foreign_key: true |
 
