@@ -66,18 +66,15 @@
         <li class='list'>
           <%= link_to "#" do %>
           <div class='item-img-content'>
-            <%= image_tag "item-sample.png", class: "item-img" %>
+            <%= image_tag information.image, class: "item-img" %>
 
           </div>
           <div class='item-info'>
             <h3 class='item-name'>
-              <%= "商品名" %>
+              <%= information.title %>
             </h3>
             <div class='item-price'>
-              <div class='star-btn'>
-                <%= image_tag "star.png", class:"star-icon" %>
-                <span class='star-count'>0</span>
-              </div>
+              <%= information.date_id %>
             </div>
           </div>
           <% end %>
