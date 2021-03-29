@@ -16,7 +16,7 @@
 
     <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
 
-    <%= link_to "投稿ページ編集", "#", method: :get, class: "item-red-btn" %>
+    <%= link_to "投稿ページ編集", edit_information_path, method: :get, class: "item-red-btn" %>
     <p class="or-text">or</p>
     <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
 
@@ -59,7 +59,7 @@
       </tbody>
     </table>
     <a href="#" class="another-item"><%= "商品のカテゴリー名" %>をもっと見る</a>
-    <%=link_to 'もどる', root_path, class:"back-btn" %>
+    <%=link_to 'もどる', root_path, class:"show-back-btn" %>
   </div>
   <%# /商品の概要 %>
 </div>
