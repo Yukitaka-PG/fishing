@@ -14,14 +14,13 @@
     </h2>
   </div>
 
-    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
-
-    <%= link_to "投稿ページ編集", edit_information_path, method: :get, class: "item-red-btn" %>
-    <p class="or-text">or</p>
-    <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
-
-
-    <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
+    <% if user_signed_in? %>
+      <% if current_user.id == @information.user.id %>
+        <%= link_to "投稿ページ編集", edit_information_path, method: :get, class: "item-red-btn" %>
+        <p class="or-text">or</p>
+        <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
+      <% end %>
+    <% end %>
 
     <div class="item-explain-box">
       <span><%= "釣果データ" %></span>
