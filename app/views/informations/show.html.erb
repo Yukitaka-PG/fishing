@@ -1,0 +1,68 @@
+<%= render "shared/header" %>
+
+<%# 商品の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name-title">
+      <%= @information.title %>
+    </h2>
+    <div class="item-img-content">
+      <%= image_tag @information.image ,class:"item-box-img" %>
+    </div>
+    <h2 class="name-text">
+      <%= @information.text %>
+    </h2>
+  </div>
+
+    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
+
+    <%= link_to "投稿ページ編集", "#", method: :get, class: "item-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
+
+
+    <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
+
+    <div class="item-explain-box">
+      <span><%= "釣果データ" %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">釣れた日</th>
+          <td class="detail-value"><%= @information.date_id %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">魚種</th>
+          <td class="detail-value"><%= @information.fish %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">サイズ</th>
+          <td class="detail-value"><%= @information.size %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">重さ</th>
+          <td class="detail-value"><%= @information.weight %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">匹数</th>
+          <td class="detail-value"><%= @information.number %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">都道府県</th>
+          <td class="detail-value"><%= @information.prefecture.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">エリア</th>
+          <td class="detail-value"><%= @information.area %></td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="#" class="another-item"><%= "商品のカテゴリー名" %>をもっと見る</a>
+    <%=link_to 'もどる', root_path, class:"back-btn" %>
+  </div>
+  <%# /商品の概要 %>
+</div>
+
+<%= render "shared/footer" %>
+
