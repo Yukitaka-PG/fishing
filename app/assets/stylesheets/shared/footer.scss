@@ -11,12 +11,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15vh 15vw;
+  padding: 10vh 15vh;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.ad-footer-title {
-  font-size: 4vh;
-  margin-bottom: 2vh;
+.maxim {
+  font-size: 50px;
+}
+
+.text-block {
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  font-size: 5vh;
   color: red;
+  margin-top: 7vh;
+}
+
+.text {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
+  
+}
+.text.is-active {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
 }
