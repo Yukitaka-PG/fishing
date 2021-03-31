@@ -9,6 +9,12 @@ class Information < ApplicationRecord
     validates :date_id
   end
 
+  with_options numericality: { only_integer: true }, allow_blank: true do
+    validates :size
+    validates :weight
+    validates :number
+  end
+
   with_options numericality: { other_than: 1 } do
     validates :prefecture_id
   end
