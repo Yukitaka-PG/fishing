@@ -1,5 +1,5 @@
 class InformationsController < ApplicationController
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @informations = Information.all.order("created_at DESC")
