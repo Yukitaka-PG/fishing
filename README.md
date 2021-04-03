@@ -24,7 +24,7 @@ Password:a11111
 ![toppage2](https://user-images.githubusercontent.com/78136863/113465814-e6d70a80-9471-11eb-8822-8548148a25fb.gif)
 
 #### 新規登録画面
-
+<img width="637" alt="devise registrations" src="https://user-images.githubusercontent.com/78136863/113465971-002c8680-9473-11eb-89a0-346514904318.png">
 
 #### 投稿画面
 ![new1](https://user-images.githubusercontent.com/78136863/113465821-f1919f80-9471-11eb-8019-1e70eeadabb0.gif)
