@@ -19,7 +19,8 @@ Password:a11111
 
 ## DEMO
 #### トップページ
-https://gyazo.com/310d2a28a17455d8cdce1dc725226039  
+![toppage1](https://user-images.githubusercontent.com/78136863/113465739-7fb95600-9471-11eb-9b08-c3de459d7e30.gif)
+ 
 https://gyazo.com/277959e40b6dab45e4d90d396e03e494
 
 #### 新規登録画面
