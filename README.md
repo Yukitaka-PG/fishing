@@ -21,22 +21,22 @@ Password:a11111
 #### トップページ
 ![toppage1](https://user-images.githubusercontent.com/78136863/113465739-7fb95600-9471-11eb-9b08-c3de459d7e30.gif)
  
-https://gyazo.com/277959e40b6dab45e4d90d396e03e494
+![toppage2](https://user-images.githubusercontent.com/78136863/113465814-e6d70a80-9471-11eb-8822-8548148a25fb.gif)
 
 #### 新規登録画面
-https://gyazo.com/06d198fa8244474ecbdc3bea5adf411c
+
 
 #### 投稿画面
-https://gyazo.com/21239db43e77b9eff5024b1583ca0772
+![new1](https://user-images.githubusercontent.com/78136863/113465821-f1919f80-9471-11eb-8019-1e70eeadabb0.gif)
 
 #### 詳細画面
-https://gyazo.com/474c34f8e1df50fffa05ddda6f4978f6
+![show1](https://user-images.githubusercontent.com/78136863/113465828-f8201700-9471-11eb-994d-32a80e4b20b2.gif)
 
 #### 編集画面
-https://gyazo.com/ff558055d5b809e381f8e7979c9b3632
+![edit1](https://user-images.githubusercontent.com/78136863/113465831-01a97f00-9472-11eb-8902-173377079550.gif)
 
 #### 削除画面
-https://gyazo.com/47ab156cd52c2efd32748df62815b6ff
+![delete1](https://user-images.githubusercontent.com/78136863/113465839-079f6000-9472-11eb-856d-96a4de182c3a.gif)
 
 ## アプリのポイント
 トップページはログインしていないユーザーでも見ることができます。  
