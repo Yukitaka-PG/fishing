@@ -11,7 +11,6 @@ a {
   font-size: 40px;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
   background-image: image-url('sakana10.jpeg');
@@ -36,9 +35,7 @@ a {
   line-height: 40px;
 }
 
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
 
-/* FURIMAが選ばれる3つの理由部分 */
 .select-reason-contents {
   padding: 5vh 15vw;
 }
@@ -106,10 +103,6 @@ a {
   margin-top: 20px;
 }
 
-/* //FURIMAが選ばれる3つの理由部分 */
-
-/* 商品一覧 */
-
 .item-contents {
   background-color: #FFF;
   display: flex;
@@ -166,4 +159,3 @@ a {
 .item-name {
   font-size: 2.5vh;
 }
-/* //商品一覧 */
